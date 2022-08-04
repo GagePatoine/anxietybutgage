@@ -6,9 +6,9 @@ SceneSetup.act1();
 
 (...300)
 
-n: AND THIS IS THE HUMAN'S ANXIETY
+n: AND THIS, IS THE HUMAN'S ANXIETY.
 
-n: _YOU_ ARE THE ANXIETY
+n: _YOU_, ARE THE ANXIETY.
 
 {{if window.localStorage.continueChapter=="replay"}}
 (#act1_replay)
@@ -24,17 +24,17 @@ n: _YOU_ ARE THE ANXIETY
 
 `hong({mouth:"0_neutral", eyes:"0_neutral"})`
 
-h: Oh hey! We're back here again?
+h: Oh, hey! We're back here again...?
 
 `hong({eyes:"0_neutral"})`
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*!!
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: IN FACT, REPLAYING THIS GAME IS PUTTING THEM IN *DANGER* RIGHT NOW
+n: IN FACT, REPLAYING THIS GAME IS PUTTING THEM IN *DANGER* RIGHT NOW!!
 
-n: QUICK, WARN THEM!
+n: QUICK, *WARN THEM*!!
 
 ```
 sfx("squeak");
@@ -44,11 +44,11 @@ hong({body:"0_squeeze"});
 
 b: Human! Listen, we're in danger! The player...
 
-[...is gonna torture us again!](#act1_replay_torture)
+[...is probably gonna torture us again!](#act1_replay_torture)
 
-[...won't find an alternate ending!](#act1_replay_alternate)
+[...won't find an alternate ending at all!](#act1_replay_alternate)
 
-[...will get ludonarrative dissonance!](#act1_replay_dissonance)
+[...will get ludonarrative dissonance!!](#act1_replay_dissonance)
 
 # act1_replay_torture
 
@@ -59,27 +59,27 @@ hong({body:"0_sammich"});
 ```
 
 {{if window.HACK_REPLAY.act1_ending=="fight"}}
-b: They'll make us curl up into a ball and cry!
+b: They'll make us curl up into a ball and cry...!
 {{/if}}
 
 {{if window.HACK_REPLAY.act1_ending=="flight"}}
-b: They'll make us kill your phone for giving you a panic attack!
+b: They'll make us kill your phone for giving you a panic attack!!
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="fight"}}
-b: They'll make us *NOT* punch the party host!
+b: They'll make us *NOT* punch the party host...!
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="flight"}}
-b: They'll make us punch the Sympathetic Anti-Villain party host!
+b: They'll make us punch the "Sympathetic Anti-Villain" party host...!
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="jump"}}
-h: Well at least we might not jump off the roof this ti--
+h: Well at least we might not jump off the roof this ti-
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="walkaway"}}
-b: THEY'LL MAKE US JUMP OFF THE ROOF.
+b: *THEY'LL MAKE US JUMP OFF THE ROOF.*
 {{/if}}
 
 `bb({body:"fear"});`
@@ -1590,15 +1590,15 @@ n: PICK YOUR ENDING MOVE
 
 n: *FINISH THEM*
 
-[{FIGHT: Punish your stressful phone!}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
+[{Punish your stressful phone!}](#act1i_phone) `Game.OVERRIDE_CHOICE_LINE=true`
 
-[{FLIGHT: Curl up in a ball and cry!}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
+[{Curl up into a ball and cry!}](#act1i_cry) `Game.OVERRIDE_CHOICE_LINE=true`
 
 # act1i_phone
 
 `bb({mouth:"normal", eyes:"narrow"})`
 
-b: Your phone was giving you a panic attack!
+b: Your phone's giving you a panic attack!
 
 `bb({eyes:"anger"})`
 
