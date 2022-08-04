@@ -1,3 +1,5 @@
+# GAGE'S NOTE!! -- This is a version of Adventures with Anxiety, in which I "translated" it to answer the question nobody but me has asked. "What if I wrote it?"
+
 ![](https://ncase.me/anxiety/sharing/banner.png)
 
 # [Play the interactive story here!](https://ncase.me/anxiety/)
